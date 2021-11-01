@@ -25,8 +25,8 @@ Expected output:
 ```
 # Questions
 #### 1. What's the time and space complexity of your algorithm?
-Time complexity is O(n<sup>2</sup>) where n is the number of transactions in the rare occurence where all the transactions have the same timestamp AND amount.
-More likely is the average case with time complexity of O(n) + O(m<sup>2</sup>) where m is the number of transactions with the exact same timestamp AND amount.
+Time complexity is O(n<sup>3</sup>) where n is the number of transactions in the rare occurence where all the transactions have the same timestamp and amount.
+More likely is the average case with time complexity of O(n)* O(m<sup>2</sup>) where m is the number of transactions with the exact same timestamp and amount, which should be a much smaller number than n.
 
 Space complexity is O(n).
 
